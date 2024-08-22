@@ -90,7 +90,7 @@ export function SidebarResizable({
 
               <div
                 className={cn(
-                  'flex h-[52px] sticky bottom-0 border-t bg-red-500 backdrop-blur-xl items-center justify-center',
+                  'flex h-[52px] sticky bottom-0 border-t backdrop-blur-xl items-center justify-center',
                   isCollapsed ? 'h-[52px]' : 'px-2',
                 )}
               >
