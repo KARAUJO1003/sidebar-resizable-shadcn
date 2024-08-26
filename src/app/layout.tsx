@@ -4,6 +4,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { SidebarResizable } from '@/components/sidebar-resizable'
 import { cookies } from 'next/headers'
+import { Toaster } from 'sonner'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -33,6 +34,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
+        <Toaster richColors theme="system" />
         <SidebarResizable
           defaultLayout={defaultLayout}
           defaultCollapsed={defaultCollapsed}
